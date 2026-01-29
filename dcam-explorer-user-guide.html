@@ -1,0 +1,202 @@
+<!-- faq.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DCaM - FAQ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0B2338;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-right: 40px;
+        }
+
+        .logo img {
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+        footer {
+            background: #0B2338;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="MITRE_WHT.png" alt="MITRE Logo">
+            | DCaM
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="getting-started.html">Getting Started</a>
+            <a href="dcam-explorer.html">DCaM Explorer</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:dcam@groups.mitre.org">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>DCaM Explorer User Guide</h1>
+
+        <h2>Overview</h2>
+        <p> The DCaM Explorer is an interactive visualization of the DCaM model found at <a
+                href="dcam-explorer.html">DCaM Explorer</a>.
+            DCaM helps project teams and stakeholders explore and understand all of the content that
+            comprises DCaM. </p>
+
+        <p> The DCaM Explorer displays high-level capabilities that group together related capabilities, giving
+            stakeholders an overview of key behaviors. </p>
+
+        <h3>DCaM Domains</h3>
+        <p>DCaM organizes capabilities into five domains.</p>
+        <ul>
+            <li> <strong>Collaboration</strong>: How stakeholders and teams work together to plan, build, and release
+                software. Collaboration includes communication, feedback loops, and cross-functional roles within teams.
+            </li>
+            <li> <strong>Development and Test</strong>: Engineering practices that produce repeatable results and ensure
+                quality software; growing from manual, inconsistent practices to comprehensive automated practices.
+            </li>
+            <li> <strong>Pipeline Management</strong>: How project teams build, verify, release, and deploy changes; growing from
+                ad hoc scripts to standardized, versioned, and policy-governed CI/CD pipelines for reproducibility.
+            </li>
+            <li> <strong>Security</strong>: How project teams integrate security throughout the development process;
+                growing from reactive scans to continuous, automated security integrated throughout. </li>
+            <li> <strong>Operations</strong>: Practices that evolve from manual releases and basic monitoring to
+                automated, reliable operations with production-monitoring, alerting, incident response and recovery.
+            </li>
+        </ul>
+
+        <h3>Capability Levels</h3>
+        <p> DCaM defines capability levels to measure project team behaviors and practices. DCaM allows for "spikey"
+            maturity – different maturity levels across the domains – so project teams target needed improvements
+            without feeling pressure to “achieve a particular level”. </p>
+        <ul>
+            <li> <strong>Level 0 – Ad Hoc</strong>: Teams may not have a shared version control system, may not be
+                practicing Agile, and may not be working with Security or Operations. Communication is ad-hoc and
+                unstructured. Work is largely schedule based, and not goal based. </li>
+            <li> <strong>Level 1 – Development Foundations:</strong> Teams have a shared codebase in a central version
+                control repository with a common understanding of the basic structure of the application and the
+                deployable artifacts, along with a repeatable build to produce those artifacts. Security, Operations,
+                and customer interactions exist but are not integrated. </li>
+            <li> <strong>Level 2 – Development Insights</strong>: Teams have a well-defined, stable product that is
+                developed using an Agile framework. Writing and running tests is an integral part of development along
+                with a pipeline that executes. Security and Operations work closely with the team. </li>
+            <li> <strong>Level 3 – Increasing Automation</strong>: Teams have a well-defined product, defined deployment
+                target environments, operations integrated into the team, and a comprehensive set of automated tests
+                that ensure the quality of the product. </li>
+            <li> <strong>Level 4 – Proactive Engineering</strong>: Teams have automated most of the software development
+                lifecycle. Security and Operations are fully integrated in the team. Teams monitor and analyze their
+                environment and failures, continuously improving processes and its product. </li>
+            <li> <strong>Level 5 – Continuous Improvement</strong>: Teams use feedback from throughout the pipeline and
+                deployment metrics to optimize how changes flow from the team to deployment. </li>
+        </ul>
+
+        <h2>Browsing the Model</h2>
+        <p> From the DCaM Explorer, you can see which high-level capabilities are found in which capability levels.
+            Clicking on any of the high-level capabilities will open a side-panel that provides more details. Recall
+            that each high-level capability may have one or more capabilities associated with it. </p>
+
+        <h3>High Level Capability Side Panel</h3>
+        <p> In the side-panel, you can view the capabilities that make up the high-level capability. For each
+            capability, there is a description, a list of applicable functional roles, prerequisites, relevant survey
+            questions, and external references. </p>
+        <ul>
+            <li><em>Description</em> explains the practices and behaviors applicable to the capability.</li>
+            <li><em>Functional Roles</em> include a list of functional roles that are applicable to the capability.</li>
+            <li> <em>Prerequisites</em> show how different capabilities are interrelated. While hovering over a
+                prerequisite, the high-level capabilities involved are highlighted to show where in the broader picture
+                the pre-req applies. The high-level capability of the prerequisite is shown in black and prerequisite
+                capabilities are shown in gray. There are a few different views. <ul>
+                    <li> Tree view – Shows the prerequisites in hierarchical order and provides an idea of what
+                        prerequisites are needed to enable successful adoption of this capability. Tree view is the
+                        default view. </li>
+                    <li> List View – lists all the dependencies, including transitive dependencies. </li>
+                </ul>
+            </li>
+            <li><em>Questions</em> contain the associated survey questions</li>
+            <li><em>References</em> contain links to external references that can provide additional information on the
+                capability.</li>
+        </ul>
+
+        <h2>Agile Capability Model (ACaM)</h2>
+        <p> From the DCaM Explorer home, click on <strong>ACAM</strong> to view the Agile only aligned capabilities.
+        </p>
+        <p> To return to the main DCaM view, click on <strong>DCaM</strong>. </p>
+
+        <h2>Functional Roles</h2>
+        <p> From the DCaM Explorer home, you can filter on capabilities that apply to a specific role. For instance, if
+            you are a Software Tester, you may want to view only the high-level capabilities that are applicable to you.
+        </p>
+        <p> Select the <strong>Functional Roles</strong> drop down, and check “Software Tester”. The interactive DCaM
+            Explorer will now display only the high-level capabilities that apply to the Software Tester functional
+            role. </p>
+        <p> You can select more than one Functional Role, such as “Security” and “Software Tester” to view the
+            high-level capabilities that apply to the Security or software tester functional roles. </p>
+        <p> To return to the main DCaM view, the <strong>Functional Roles</strong> drop down, uncheck “Software Tester”
+            and check “All”. </p>
+
+        <h2>Glossary</h2>
+        <p> From the DCaM Explorer home, select <strong>Glossary</strong> to view the key terms and their meanings. The
+            glossary is intended to build a common lexicon of key terminology and jargon that are used in DevSecOps, and
+            highlights what they mean within the context of the model. </p>
+        <p> To return to the main DCaM view, click <strong>Explorer</strong>. </p>
+
+    </main>
+    <footer>
+    Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-3259<br>
+    ©2026 The MITRE Corporation. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+</html>

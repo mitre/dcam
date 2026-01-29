@@ -1,0 +1,263 @@
+<!-- getting-started.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DCaM - Getting Started</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0B2338;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-right: 40px;
+        }
+
+        .logo img {
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        .toc {
+            padding: 10px 15px;
+            background: #f2f2f2;
+            border: 1px solid #dddddd;
+            margin-bottom: 30px;
+        }
+
+        .toc ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #0B2338;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .icon-image {
+                    float: left;
+                    margin-right: 10px;
+                    height: 40px;
+                }
+        footer {
+            background: #0B2338;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="MITRE_WHT.png" alt="MITRE Logo">
+            | DCaM
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="getting-started.html">Getting Started</a>
+            <a href="dcam-explorer.html">DCaM Explorer</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:dcam@groups.mitre.org">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Getting Started</h1>
+
+        <div class="toc">
+            <strong>Contents</strong>
+            <ul>
+                <li><a href="#assess">Assess: Assess using the DevSecOps Capability Model (DCaM)</a></li>
+                <li><a href="#decide">Decide: Decide what practices to augment</a></li>
+                <li><a href="#plan">Plan: Draft and implement an adoption plan</a></li>
+                <li><a href="#educate">Educate: Explore what each practice entails</a></li>
+                <li><a href="#iterate">Iterate: Reassess and refine</a></li>
+            </ul>
+        </div>
+
+        <section id="assess">
+            <img src="Assess_icon.png" class="icon-image" alt="Assess Icon">
+            <h2>Assess: Assess using DCaM</h2>
+            <p>The DevSecOps Capability Model (DCaM) has a cross-functional team survey that measures a project team’s
+                maturity across the DCaM domains: Collaboration, Pipeline Management, Development &amp; Test, Security,
+                and Operations. Each capability is examined through a sequence of Yes/No questions that begin with
+                foundational practices and progress to more mature practices and behaviors. Survey respondents should
+                include all cross-functional team members, including development, test, security, operations, and
+                product owners.</p>
+            <p>The survey is administered via an online Lime Survey or via Excel spreadsheets. The online Lime Survey
+                adapts based on role and project team maturity.</p>
+            <ol>
+                <li>The survey only offers the respondent questions that apply to their functional role.</li>
+                <li>The survey only offers respondents questions about more mature capabilities if they answer Yes to a
+                    significant percentage of the prerequisite capabilities.</li>
+            </ol>
+            <p>All questions are answered with a Yes/No response. The assessment typically takes between 30 -120 minutes
+                per respondent, depending on how the survey is administered. After all responses are received, the DCaM
+                experts compile the results to establish a project team baseline. The baseline highlights project team
+                strengths and opportunities for improvement across the domains and provides a starting point for
+                evidence-based next steps.</p>
+
+            <h3>Project Team Point of Contact Responsibilities</h3>
+            <ul>
+                <li>Identify the team member(s) who will be taking the survey, ensuring all cross-functional roles are
+                    represented.</li>
+                <li>Determine, in coordination with the DCaM expert, the appropriate survey format, depending on the
+                    project team environment.</li>
+                <li>Confirm timeframes for the assessment.</li>
+                <li>Communicate timelines and monitor for survey completion.</li>
+            </ul>
+
+            <h3>DCaM Expert Responsibilities</h3>
+            <ul>
+                <li>Configure and administer the assessment, including providing instructions to the respondents.</li>
+                <li>Upon survey completion, compile and correlate the responses to determine the project team baseline.
+                </li>
+                <li>Coordinate with the Project Team Point of Contact to share the project team baseline.</li>
+            </ul>
+        </section>
+
+        <section id="decide">
+            <img src="Decide_icon.png" class="icon-image" alt="Decide Icon">
+            <h2>Decide: Decide what practices to augment</h2>
+            <p>After completing the DCaM assessment, the project team reviews the assessment results. Many project team
+                have “Spikey” maturity, where they achieve a high capability level in one domain, and a lower capability
+                level in another domain. The goal in this step is to agree upon which practices and behaviors to tackle
+                for improvement first.</p>
+            <p>The responses can guide a more in-depth assessment including interviews and inspection of DevSecOps
+                artifacts and processes to shape decision making.</p>
+
+            <h3>Project Team Point of Contact Responsibilities</h3>
+            <ul>
+                <li>Identify the strengths and opportunities for improvement across each domain.</li>
+                <li>Define the target capability levels for each domain. These targets may be linked to outcomes such as
+                    a desire for faster delivery or reduced security risk.</li>
+                <li>Prioritize and select practices and behaviors for improvement</li>
+            </ul>
+
+            <h3>DCaM Expert Responsibilities</h3>
+            <ul>
+                <li>Analyze survey responses to identify which capabilities a team is using, not using, or partially
+                    using.</li>
+            </ul>
+        </section>
+
+        <section id="plan">
+            <img src="Plan_icon.png" class="icon-image" alt="Plan Icon">
+            <h2>Plan: Draft and implement an adoption plan</h2>
+            <p>After deciding the target capability levels for each domain, the project team is ready to create a plan
+                to reach the targets.</p>
+            <p>Capability levels are composed of one or more high-level capabilities that are further sub-divided into
+                capabilities. These capabilities are interconnected and have prerequisites that map out how the
+                capabilities build on each other. A target capability level can be decomposed into specific capabilities
+                that must be in place. These capability prerequisites provide a ready-made plan to mature towards target
+                practices.</p>
+            <p>At the lower levels, the capabilities are team orientated and are typically implemented by individual
+                teams; at higher levels they require organizational support and change. At all levels, any growth
+                through the levels requires management support at the highest levels, to support any organizational or
+                policy changes required and to support the teams moving forward.</p>
+
+            <h3>Project Team Point of Contact Responsibilities</h3>
+            <ul>
+                <li>Identify any external constraints (e.g., tooling, budgets, resources) or plan-enablement activities
+                    such as training.</li>
+                <li>Create an action plan, tailoring the capability prerequisites for the project team.</li>
+                <li>Communicate the plan with the project team.</li>
+                <li>Implement the plan.</li>
+            </ul>
+
+            <h3>DCaM Expert Responsibilities</h3>
+            <ul>
+                <li>Upon request, available to assist with plan creation.</li>
+            </ul>
+        </section>
+
+        <section id="educate">
+            <img src="Educate_icon.png" class="icon-image" alt="Educate Icon">
+            <h2>Educate: Explore what each practice entails</h2>
+            <p>Visit the DCaM Explorer to learn more about domains, high-level capabilities, capabilities, and
+                associated prerequisites. Each capability contains a brief description and links to external references
+                that provide more detail.</p>
+
+            <h3>Project Team Point of Contact Responsibilities</h3>
+            <ul>
+                <li>Learn about capabilities, prerequisites, and external references</li>
+            </ul>
+
+            <h3>DCaM Expert Responsibilities</h3>
+            <ul>
+                <li>Upon request, available to assist with education.</li>
+            </ul>
+        </section>
+
+        <section id="iterate">
+            <img src="Iterate_icon.png" class="icon-image" alt="Iterate Icon">
+            <h2>Iterate: Reassess and refine</h2>
+            <p>Project teams can reassess regularly to show progress against stated goals. This is recommended every 6 –
+                12 months until organizational goals are achieved.</p>
+
+            <h3>Project Team Point of Contact Responsibilities</h3>
+            <ul>
+                <li>Schedule when to reassess the project team</li>
+            </ul>
+
+            <h3>DCaM Expert Responsibilities</h3>
+            <ul>
+                <li>Upon request, assist with scheduling an additional assessment.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+    Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-3259<br>
+    ©2026 The MITRE Corporation. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+
+</html>
