@@ -1,0 +1,1 @@
+Run generate.py from the dcam-capabilities repo pointing it to this location to populate the 3 json files (glossary, functionalRoles, and capabilities)
